@@ -1,0 +1,4 @@
+<div class="add-todo">
+  <input #taskInput type="text" placeholder="Enter a task" />
+  <button (click)="newTaskText = taskInput.value; addTodo()">Add Task</button>  
+</div>

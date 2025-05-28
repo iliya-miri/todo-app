@@ -1,0 +1,8 @@
+<div>
+  <input
+    type="checkbox"
+    [(ngModel)]="todo.isCompleted"
+    (change)="updateStatus(todo)"
+  />
+  <span [ngClass]="{ completed: todo.isCompleted }">{{ todo.title }}</span>
+</div>
